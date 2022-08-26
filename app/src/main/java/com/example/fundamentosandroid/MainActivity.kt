@@ -12,22 +12,32 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
+        println("onStart chamado!")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        println("onRestart chamado!")
     }
 
     override fun onResume() {
         super.onResume()
+        println("onResume chamado!")
     }
 
     override fun onPause() {
         super.onPause()
+        println("onPause chamado!")
     }
 
     override fun onStop() {
         super.onStop()
+        println("onStop")
     }
 
     override fun onDestroy() {
         super.onDestroy()
+        println("onDestroy chamado!")
     }
-    
+
 }
